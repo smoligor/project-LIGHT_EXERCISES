@@ -81,9 +81,8 @@ async function fetchAndRenderCategories() {
         renderCategoryCards(data.results);
         renderCategoriesPagination(data.totalPages);
         categoriesStatus.textContent = `${filter} categories loaded. Page ${page}.`;
-    } catch (err) {
+    } catch {
         if (requestId !== latestRequestId) return;
-        console.error(err);
         paginationContainer.innerHTML = '';
         categoriesContainer.innerHTML = `
             <li class="categories-message">

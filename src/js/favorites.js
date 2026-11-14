@@ -19,8 +19,7 @@ function getFavorites() {
           item => item && typeof item === 'object' && (item._id || item.id)
         )
       : [];
-  } catch (error) {
-    console.warn('Could not read Favorites:', error);
+  } catch {
     return [];
   }
 }
@@ -34,11 +33,10 @@ function saveFavorites(items) {
       })
     );
     return true;
-  } catch (error) {
+  } catch {
     showMessage(
       'Unable to update favorites in this browser. Check storage permissions.'
     );
-    console.error('Could not save Favorites:', error);
     return false;
   }
 }

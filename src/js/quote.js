@@ -141,8 +141,8 @@ export async function initQuoteSection() {
     populateSidebarWrapper();
     renderQuote(data);
     setupTextAdjustment();
-  } catch (err) {
-    console.error('initQuoteSection error:', err);
+  } catch {
+    return;
   }
 }
 

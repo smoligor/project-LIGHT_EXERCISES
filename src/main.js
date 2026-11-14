@@ -1,3 +1,4 @@
+import 'modern-normalize/modern-normalize.css';
 import './js/header.js';
 
 import spriteUrl from './images/sprite.svg';

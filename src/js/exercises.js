@@ -77,9 +77,8 @@ async function fetchAndRenderExercises() {
 
         renderExerciseCards(data.results);
         renderExercisesPagination(data.totalPages);
-    } catch (err) {
+    } catch {
         if (requestId !== latestRequestId) return;
-        console.error(err);
         exercisesList.innerHTML = '<li class="no-results">Something went wrong. Please try again.</li>';
         paginationContainer.innerHTML = '';
     } finally {
