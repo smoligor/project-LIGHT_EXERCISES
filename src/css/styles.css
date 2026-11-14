@@ -1,0 +1,15 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./footer.css');
+@import url('./exercise-modal.css');
+@import './filters.css';
+@import './categories.css';
+@import './exercises.css';
+@import './quote.css';
+@import url('./favorites.css');
+@import url('./loader.css');
+@import url('./scroll-top.css');
